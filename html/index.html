@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Currency Converter</title>
+</head>
+<body>
+   
+    <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+                <div class="card p-3">
+                    <form>
+                        <h1 class="h2 mb-4">Currency Converter</h1>
+
+                        <div class="courses">
+                            <div class="course-item card card-body">
+                                <div class="course-item-title">USD</div>
+                                <div class="course-item-subtitle">US Dollar</div>
+                                <img src="../img/usa.png" alt="USD">
+                                <div class="course-item-value" data-value="USD">--.--</div>
+                            </div>
+                            <div class="course-item card card-body">
+                                <div class="course-item-title">EUR</div>
+                                <div class="course-item-subtitle">Euro</div>
+                                <img src="../img/eu.png" alt="EUR">
+                                <div class="course-item-value" data-value="EUR">--.--</div>
+                            </div>
+                            <div class="course-item card card-body">
+                                <div class="course-item-title">GBP</div>
+                                <div class="course-item-subtitle">British Pound</div>
+                                <img src="../img/gb.png" alt="GBR">
+                                <div class="course-item-value" data-value="GBP">--.--</div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-1">
+                            <div class="col">
+                                <label for="name">Source currency :</label>
+                                <select
+                                    disabled
+                                    class="form-control"
+                                    id="exampleFormControlSelect1"
+                                >
+                                    <option value="RUB" selected>RUB — Russian ruble</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="name">Destination currency :</label>
+                                <select
+                                    id="select"
+                                    class="form-control"
+                                    id="exampleFormControlSelect1"
+                                >
+                                    <option value="USD">USD — US dollar</option>
+                                    <option value="EUR">EUR — Еuro</option>
+                                    <option value="GBP">GBP — British Pound</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <input
+                                    id="input"
+                                    type="number"
+                                    class="form-control"
+                                    id="name"
+                                    autofocus
+                                />
+                            </div>
+                            <div class="col">
+                                <input
+                                    id="result"
+                                    type="number"
+                                    class="form-control"
+                                    id="name"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
